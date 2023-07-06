@@ -2253,7 +2253,7 @@ export class BaseCompiler implements ICompiler {
 
     doTempfolderCleanup(buildResult) {
         if (buildResult.dirPath && !this.delayCleanupTemp) {
-            fs.remove(buildResult.dirPath);
+            // fs.remove(buildResult.dirPath);
         }
         buildResult.dirPath = undefined;
     }

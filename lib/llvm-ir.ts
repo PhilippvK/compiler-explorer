@@ -231,17 +231,17 @@ export class LlvmIrParser {
             };
         }
 
-        if (options.demangle) {
-            return {
-                asm: (await this.irDemangler.process({asm: result})).asm,
-                languageId: 'llvm-ir',
-            };
-        } else {
-            return {
-                asm: result,
-                languageId: 'llvm-ir',
-            };
-        }
+        // if (options.demangle) {
+        //     return {
+        //         asm: (await this.irDemangler.process({asm: result})).asm,
+        //         languageId: 'llvm-ir',
+        //     };
+        // } else {
+        return {
+            asm: result,
+            languageId: 'llvm-ir',
+        };
+        // }
     }
 
     async processFromFilters(ir, filters: ParseFiltersAndOutputOptions) {

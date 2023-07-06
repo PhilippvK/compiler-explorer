@@ -681,6 +681,17 @@ const definitions: Record<LanguageKey, LanguageDefinition> = {
         previewFilter: null,
         monacoDisassembly: null,
     },
+    relay: {
+        name: 'RelayIR',
+        monaco: 'relay-ir',
+        extensions: ['.relay'],
+        alias: [],
+        logoUrl: 'js.svg',
+        logoUrlDark: null,
+        formatter: null,
+        previewFilter: null,
+        monacoDisassembly: null,
+    },
 };
 
 export const languages = Object.fromEntries(

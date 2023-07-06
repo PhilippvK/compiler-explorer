@@ -80,7 +80,8 @@ export type LanguageKey =
     | 'typescript'
     | 'vala'
     | 'vb'
-    | 'zig';
+    | 'zig'
+    | 'relay';
 
 export interface Language {
     /** Id of language. Added programmatically based on CELanguages key */

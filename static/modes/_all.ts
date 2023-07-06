@@ -56,6 +56,7 @@ import './nim-mode';
 import './ocaml-mode';
 import './openclc-mode';
 import './ptx-mode';
+import './relay-ir-mode';
 import './spirv-mode';
 import './vala-mode';
 import './zig-mode';
